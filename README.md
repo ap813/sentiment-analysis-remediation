@@ -26,7 +26,8 @@ Here are the steps to build this project. Make sure that you have installed the 
 1. Clone the repo
 2. Add in your desired email in the environment variable *SNS_EMAIL*
 3. Run *pulumi up*, review the infrastructure being created, then select *yes*
-4. The execution with give you the new API Gateway url when you run *pulumi stack output api_gateway*. Replace {{ api_gateway }} down below with your generated API Gateway url and run the command
+4. Once the stack is completely built, you will get an email from AWS asking you to opt-in to alerts from the newly created SNS target. Accept it so you will receive alerts later
+5. The execution with give you the new API Gateway url when you run *pulumi stack output api_gateway*. Replace {{ api_gateway }} down below with your generated API Gateway url and run the command
 
 ```bash
 curl -XPOST -H "Content-type: application/json" -d '{
@@ -36,4 +37,4 @@ curl -XPOST -H "Content-type: application/json" -d '{
 }' '{{ api_gateway }}/stage/sentiment'
 ```
 
-5. You should get an email at your desired email address in less than 10s
+6. You should get an email at your desired email address in less than 10s
