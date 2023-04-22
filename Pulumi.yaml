@@ -1,0 +1,6 @@
+name: sentiment-analysis-reconciliation
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: Sentiment analysis on reviews and remediate via SNS topic
