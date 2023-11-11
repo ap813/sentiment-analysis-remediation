@@ -4,7 +4,7 @@ This project is a Lambda function fronted by an API Gateway with Infrastructure 
 
 ## The reason behind the solution
 
-Solutions are cool, but the *why* is really the important part. Let's say uou have a comment section on your application. You want to provide immediate feedback from your organization when you get negative comments. This is usually seen in the real world where people leave comments on Google about a business when they have an unsatisfactory experience. Then the owner of the business goes on Google and replies to the comment how they see fit.
+Solutions are cool, but the *why* is really the important part. Let's say you have a comment section on your application. You want to provide immediate feedback from your organization when you get negative comments. This is usually seen in the real world where people leave comments on Google about a business when they have an unsatisfactory experience. Then the owner of the business goes on Google and replies to the comment how they see fit.
 
 What is being built here is a model of how to react to those negative comments. You provide an email in an environment variable about where you want emails to go to. Then you'll receive those emails when customers are upset.
 
@@ -17,7 +17,7 @@ What is being built here is a model of how to react to those negative comments. 
 
 ## Architecture
 
-[Sentiment Analysis Diagram](./sentiment-analysis-diagram.png)
+![Sentiment Analysis Diagram](./sentiment-analysis-diagram.png)
 
 ## Build it
 
